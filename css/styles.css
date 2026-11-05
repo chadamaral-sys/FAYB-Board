@@ -320,37 +320,6 @@ h3 {
   font-weight: 700;
 }
 
-.scoreboard {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.7rem;
-  margin: 0.4rem 0 0.2rem;
-}
-
-.scoreboard div {
-  background: var(--navy);
-  color: var(--white);
-  border-radius: 0.8rem;
-  padding: 0.8rem 0.75rem 0.7rem;
-  text-align: center;
-}
-
-.scoreboard strong {
-  display: block;
-  font-family: var(--display);
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
-  letter-spacing: 0.03em;
-  color: var(--sky);
-}
-
-.scoreboard span {
-  display: block;
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--sky);
-}
-
 .minutes section + section {
   margin-top: 1.35rem;
   padding-top: 0.2rem;
@@ -418,10 +387,6 @@ h3 {
 }
 
 @media (max-width: 720px) {
-  .scoreboard {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .hero {
     background: linear-gradient(160deg, #0c2340, #16365c);
   }
@@ -437,12 +402,6 @@ h3 {
   .nav a {
     flex: 1 1 auto;
     justify-content: center;
-  }
-}
-
-@media (max-width: 420px) {
-  .scoreboard {
-    grid-template-columns: 1fr;
   }
 }
 
